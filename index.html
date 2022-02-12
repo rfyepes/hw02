@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Yepes Bakery - Home</title>
+    
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+      
+      .main-body {
+        
+    /*border: 1px orange solid;*/
+        background: white;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+  
+           
+      }
+      
+
+
+      #cupcakes {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+      }
+      
+      .body-boxx {
+        display: inline-block;
+    /*  border: 1px black solid;*/
+        vertical-align: middle; 
+        text-align: left;
+        
+        font-family: Arial;
+        font-size: 3vw;
+        font-weight: bold;
+        color: #FFC0E8;
+        
+      }
+      
+      #small {
+        display: none;
+      }
+      
+      
+
+      
+      
+      /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (max-width: 700px) {
+  .body-boxx {
+    font-size: 30px;
+    text-align: center;
+  }
+  #big {
+    display: none;
+  }
+  #small {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+  
+  #logo {
+    height: 100px;
+  }
+  
+  .menu {
+    
+    font-size: 11px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  }
+  
+  a:link {
+    padding: 7px 12px;
+  }
+
+
+  
+}
+      
+    </style>
+    
+    
+    
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="box1"><img src="logo_oval.png" height="125" width="auto" id="logo"/></div>
+      <div class="body-big">
+        <div class="box1"><h1>Yepes Bakery</h1></div>
+      </div>
+      <br>
+      <div class="menu"><a href="index.html">HOME</a></div>
+      <div class="menu"><a href="menu.html">MENU</a></div>
+      <div class="menu"><a href="services.html">SERVICES</a></div>
+      <div class="menu"><a href="contact.html">CONTACT</a></div>
+    </div>
+    
+    
+    
+    <div class="main-body" id="big">
+      <div class="body-boxx"><img src="wall.jpg" id="cupcakes"/></div>
+      <div class="body-boxx">
+        Artisan baked goods...
+        <br> <br>
+        delivered right to your doorstep.
+      </div>
+    </div>
+    
+    <div class="main-body" id="small">
+      <div class="body-boxx">
+        Artisan baked goods...
+      </div>
+      <br>
+      <div class="body-boxx"><img src="wall.jpg" id="cupcakes"/></div>
+      <br>
+      <div class="body-boxx">
+        delivered right to your doorstep.
+      </div>
+    </div>
+    <br>
+
+   </body>
+</html>

@@ -1,0 +1,145 @@
+
+.header { 
+         background: #9bebf4;
+         color: white;
+         margin: 0px;
+         padding: 10px;
+         border-radius: 20px;
+         position: sticky;
+         top: 0;
+         text-align: center;
+         
+}
+
+#logo {
+  border: none;
+}
+
+.body-box { 
+        background: white;
+        padding: 0px;
+        display: inline-block;
+        
+        font-size: 30px;
+        font-family: Arial;
+        font-weight: bold;
+        vertical-align: middle;  
+        color: #FFC0E8;
+        text-align: left;
+
+
+
+}
+
+.body-big {
+  
+    display: inline-block;
+    text-align: center;
+  
+}
+
+.body-small {
+  
+  display: none;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+
+.box1 { padding-left: 20px;
+        overflow: hidden;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 30px;
+        
+}
+
+.menu {  margin-left: 15px;
+         margin-right: 15px;   
+         overflow: hidden;
+         background: #FFC0E8;
+         display: inline-block;
+         font-family: Arial;
+         font-weight: bold;
+         font-size: 15px;
+         border-radius: 10px;
+         border: 2px white solid;
+}
+
+.box2 {    
+         overflow: hidden;
+         display: inline-block;
+         font-family: Arial;
+         font-weight: bold;
+         vertical-align: middle; 
+          color: white; 
+         font-size: 45px;  
+}
+
+a:link, a:visited {
+  background-color: #9bebf4;
+  color: white;
+  padding: 10px 20px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50;
+}
+
+a:hover { background-color: #FFC0E8; }
+
+a:active {
+    background-color: #FFC0E8;
+    color: #9bebf4;
+}
+
+.small-screen {
+display: none;
+font-size: 30px;
+overflow: hidden;
+font-family: Arial;
+font-weight: bold;
+vertical-align: middle;  
+border: 1px black solid;
+text-align: center;
+padding: 20px; 
+color: #FFC0E8;
+  
+  
+  
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .header {
+    float: none;
+    display: block;
+  }
+  
+  .small-screen {
+  display: block;
+  }
+  
+  .big-screen {
+    display: none;
+  }
+  
+  .body-big {
+    display: none;
+  }
+  
+  .body-small {
+    display: block;
+  }
+  
+  tr {
+    display: grid;
+    text-align: center;
+  }
+  
+  
+  
+}
