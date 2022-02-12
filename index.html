@@ -9,91 +9,30 @@
     
     <style>
       
-      .main-body {
-        
-    /*border: 1px orange solid;*/
-        background: white;
-        width: 100%;
-        
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-  
-           
-      }
-      
-
-
       #cupcakes {
-            flex: 1;
-            max-width: 100%;
-            height: auto;
-            max-height: 400px;
-      }
-      
-      .body-boxx {
-        display: inline-block;
-    /*  border: 1px black solid;*/
-        vertical-align: middle; 
-        text-align: left;
-        
-        font-family: Arial;
-        font-size: 3vw;
-        font-weight: bold;
-        color: #FFC0E8;
-        
+          flex: 1;
+          max-width: 100%;
+          height: auto;
+          max-height: 400px;
       }
       
       #small {
-        display: none;
+          display: none;
       }
       
-      
-
-      
-      
-      /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (max-width: 700px) {
-  .body-boxx {
-    font-size: 30px;
-    text-align: center;
-  }
-  #big {
-    display: none;
-  }
-  #small {
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
-  }
-  
-  #logo {
-    height: 100px;
-  }
-  
-  .menu {
-    
-    font-size: 11px;
-    margin-left: 5px;
-    margin-right: 5px;
-    
-  }
-  
-  a:link {
-    padding: 7px 12px;
-  }
-
-
-  
-}
-      
+      @media screen and (max-width: 700px) {
+          #big {
+              display: none;
+          }
+          
+          #small {
+              display: inline-block;
+              padding-top: 20px;
+              padding-bottom: 20px;
+          }
+      }
+        
     </style>
-    
-    
     
   </head>
   <body>
@@ -110,11 +49,9 @@
       <div class="menu"><a href="contact.html">CONTACT</a></div>
     </div>
     
-    
-    
     <div class="main-body" id="big">
-      <div class="body-boxx"><img src="wall.jpg" id="cupcakes"/></div>
-      <div class="body-boxx">
+      <div class="body-box"><img src="wall.jpg" id="cupcakes"/></div>
+      <div class="body-box">
         Artisan baked goods...
         <br> <br>
         delivered right to your doorstep.
@@ -122,17 +59,25 @@
     </div>
     
     <div class="main-body" id="small">
-      <div class="body-boxx">
+      <div class="body-box">
         Artisan baked goods...
       </div>
       <br>
-      <div class="body-boxx"><img src="wall.jpg" id="cupcakes"/></div>
+      <div class="body-box"><img src="wall.jpg" id="cupcakes"/></div>
       <br>
-      <div class="body-boxx">
+      <div class="body-box">
         delivered right to your doorstep.
       </div>
     </div>
     <br>
+    
+    <div class="body-box" style="color: #565656; font-size: 24px; margin: 15px;">
+      Welcome to Yepes Bakery, where you can have the traditional bakery experience
+      in-store - or the modern experience of ordering delivery with just a click!
+      <br><br>
+      Thank you for checking out our website - feel free to explore!
+      <br><br>
+    </div>
 
    </body>
 </html>
